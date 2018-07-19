@@ -43,8 +43,7 @@ if (isset($_POST['submit'])) {
     }
     // This is captch varification end from server side. 
 
-
-	if (isset($cp_check) && $cp_check==1){
+    if (isset($cp_check) && $cp_check==1){
 		echo "Successfull varification from server side";
 	}else{
 		echo "captch varification faild";
@@ -53,23 +52,12 @@ if (isset($_POST['submit'])) {
 
 	?>
 
-
-
-<script>
- 	// var vcc = function(g_recaptcha_response) {
-	 // var $captcha = $( '#recaptcha' );
-	 
-	 // $( '.msg-error' ).text('');
-	 //    $captcha.removeClass( "error" );
-	 // };
-</script>
 <style>
 .msg-error {
   color: red;
  }
-
-
 </style>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://www.google.com/recaptcha/api.js"></script>
 
